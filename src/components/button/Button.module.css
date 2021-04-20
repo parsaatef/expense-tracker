@@ -1,0 +1,68 @@
+.button {
+	border-style: solid;
+	border-width: 1px;
+	padding: 8px 15px;
+	cursor: pointer;
+}
+
+.simple,
+.simple:hover,
+.simple:focus,
+.simple:active {
+	border-color: transparent;
+	background-color: transparent;
+	outline: solid 1px transparent;
+}
+
+.primary {
+	background-color: rgb(243, 201, 87);
+	border-color: rgb(243, 201, 87);
+}
+
+.primary:hover,
+.primary:focus,
+.primary:active {
+	background-color: rgb(240, 155, 58);
+	border-color: rgb(240, 155, 58);
+	outline: solid 1px transparent;
+}
+
+.secondary {
+	background-color: rgb(182, 28, 182);
+	border-color: rgb(148, 5, 148);
+	color: #ffffff;
+}
+
+.secondary:hover,
+.secondary:focus,
+.secondary:active {
+	background-color: rgb(128, 5, 128);
+	border-color: rgb(112, 4, 112);
+	outline: solid 1px transparent;
+}
+
+.outline {
+	background-color: transparent;
+	color: #000000;
+}
+
+.icon {
+	padding-right: 9px;
+	font-size: 11px;
+}
+
+.text-white {
+	color: #ffffff;
+}
+
+.text-black {
+	color: #000000;
+}
+
+.text-primary {
+	color: rgb(243, 201, 87);
+}
+
+.text-secondary {
+	color: rgb(182, 28, 182);
+}

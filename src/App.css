@@ -1,0 +1,77 @@
+.App {
+	margin: 0 auto;
+	max-width: 500px;
+	position: relative;
+	min-height: calc(100vh - 8.5rem);
+	padding: 0 1.5rem;
+}
+
+input,
+textarea,
+select {
+	border-radius: 4px;
+	border: 1px solid #e0dfdf;
+	line-height: 250%;
+	height: 2.5rem;
+	width: 100%;
+	/*max-width: 400px;*/
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 1.6rem;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+	height: 3.5rem;
+}
+
+textarea:hover,
+input:hover,
+input:focus,
+textarea:focus,
+select:focus,
+input:active,
+select:active,
+textarea:active {
+	outline: 1px solid transparent;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position: calc(100% - 20px) calc(1em + 4px),
+		calc(100% - 15px) calc(1em + 4px), calc(100% - 2.5em) 0.7rem;
+	background-size: 5px 5px, 5px 5px, 1px 1.1rem;
+	background-repeat: no-repeat;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	background: #fff
+		url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+		no-repeat right 0.75rem center/12px 10px;
+	width: 2em;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	bottom: 0px;
+}
+
+.alignToRight {
+	justify-content: flex-end;
+	display: flex;
+}
+
+input.hasError {
+	border-color: rgb(235, 37, 37);
+}
+
+.fontSizeSm {
+	font-size: 0.87rem;
+}
